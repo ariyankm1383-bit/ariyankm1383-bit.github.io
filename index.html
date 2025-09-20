@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Name | Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">Your Name</div>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="socials">
+                <a href="#" target="_blank" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                <a href="#" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
+                <a href="#" target="_blank" title="Twitter"><i class="fab fa-x-twitter"></i></a>
+            </div>
+        </nav>
+        <div class="header-content">
+            <h1>
+                Hi, I'm <span class="name-gradient">Your Name</span><br>
+                <span class="subtitle">Web Developer & Designer</span>
+            </h1>
+            <p class="intro">I build clean, modern web experiences focused on performance and aesthetics.</p>
+            <a href="#projects" class="cta-btn">See My Work</a>
+        </div>
+    </header>
+
+    <main>
+        <section id="about">
+            <div class="section-title">
+                <h2>About Me</h2>
+            </div>
+            <div class="about-flex">
+                <img src="Lucid_Realism_a_user_profile_page_with_a_placeholder_profile_p_3.jpg" alt="Profile" class="profile-pic">
+                <div>
+                    <p>
+                        I'm a passionate developer specializing in modern front-end technologies and UX/UI design. With a keen eye for detail, I transform ideas into engaging digital products.
+                    </p>
+                    <ul class="skills-list">
+                        <li>JavaScript (ES6+)</li>
+                        <li>React / Vue</li>
+                        <li>HTML5 & CSS3</li>
+                        <li>UI/UX Design</li>
+                        <li>Responsive Design</li>
+                        <li>Figma / Adobe XD</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects">
+            <div class="section-title">
+                <h2>Projects</h2>
+            </div>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-img" style="background-image:url('https://images.unsplash.com/photo-1461749280684-dccba630e2f6?auto=format&fit=crop&w=400&q=80');"></div>
+                    <div class="project-info">
+                        <h3>Portfolio Website</h3>
+                        <p>Responsive personal portfolio built with React, styled-components, and Framer Motion.</p>
+                        <div class="project-links">
+                            <a href="#" target="_blank"><i class="fas fa-external-link-alt"></i> Live</a>
+                            <a href="#" target="_blank"><i class="fab fa-github"></i> Code</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-img" style="background-image:url('https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=400&q=80');"></div>
+                    <div class="project-info">
+                        <h3>Task Manager App</h3>
+                        <p>Full-featured productivity app with user auth, built using Vue.js and Firebase.</p>
+                        <div class="project-links">
+                            <a href="#" target="_blank"><i class="fas fa-external-link-alt"></i> Live</a>
+                            <a href="#" target="_blank"><i class="fab fa-github"></i> Code</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Add more project cards as needed -->
+            </div>
+        </section>
+
+        <section id="contact">
+            <div class="section-title">
+                <h2>Contact</h2>
+            </div>
+            <form id="contactForm" class="contact-form">
+                <input type="text" id="name" placeholder="Your Name" required>
+                <input type="email" id="email" placeholder="Your Email" required>
+                <textarea id="message" placeholder="Your Message" required></textarea>
+                <button type="submit">Send Message</button>
+                <p id="formMessage"></p>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Your Name. All rights reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
